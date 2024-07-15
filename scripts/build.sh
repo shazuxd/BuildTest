@@ -1,5 +1,4 @@
 #!/bin/bash
-rm -rf hardware/xiaomi/megvii
 source build/envsetup.sh
 lunch aosp_pissarro-user
 export CCACHE_DIR=/tmp/ccache
@@ -11,4 +10,7 @@ ccache -M 50G
 ccache -o compression=true
 ccache -z
 mka vendorimage
-mka system_extimage
+mka systemextimage
+mka productimage
+mka odmimage
+mka systemimage
