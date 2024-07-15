@@ -1,0 +1,16 @@
+env:
+    DEVICE: pissarro
+
+task:
+  name: "test"
+  timeout_in: 120m
+  container:
+      image: shazuxdd/ubuntu:latest
+      cpu: 8
+      memory: 32G
+  Setup_script:
+      - ./scripts/setup.sh
+  Sync_script:
+      - ./scripts/sync.sh
+  Build_script:
+      - ./scripts/build.sh
