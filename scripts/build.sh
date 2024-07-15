@@ -9,8 +9,4 @@ export ALLOW_MISSING_DEPENDENCIES=true
 ccache -M 50G
 ccache -o compression=true
 ccache -z
-mka vendorimage
-mka systemextimage
-mka productimage
-mka odmimage
-mka systemimage
+make bacon
