@@ -10,7 +10,5 @@ export ALLOW_MISSING_DEPENDENCIES=true
 ccache -M 50G
 ccache -o compression=true
 ccache -z
-mka bootimage
-mka sepolicy
-mka init
-
+mka vendorimage
+mka system_extimage
