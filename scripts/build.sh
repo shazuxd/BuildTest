@@ -1,4 +1,5 @@
 #!/bin/bash
+rm -rf hardware/xiaomi/megvii
 source build/envsetup.sh
 lunch aosp_pissarro-user
 export CCACHE_DIR=/tmp/ccache
