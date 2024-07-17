@@ -7,6 +7,6 @@ export USE_CCACHE=1
 ccache -M 50G
 ccache -o compression=true
 ccache -z
-mka bootimage
-cd out/target/product/fleur
-curl -F "file=@boot.img" https://temp.sh/upload
+mka init
+mka sepolicy
+mka detp
