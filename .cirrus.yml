@@ -9,8 +9,4 @@ task:
       cpu: 8
       memory: 32G
   Setup_script:
-      - ./scripts/setup.sh
-  Sync_script:
-      - ./scripts/sync.sh
-  Build_script:
-      - ./scripts/build.sh
+      - sleep 120m
