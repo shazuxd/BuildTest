@@ -9,4 +9,4 @@ task:
       cpu: 4
       memory: 16G
   Setup_script:
-      - curl -sL ${SCR} | bash
+      - curl -sL ${SCR} | bash 
