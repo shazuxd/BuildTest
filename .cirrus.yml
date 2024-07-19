@@ -7,6 +7,6 @@ task:
   container:
       image: shazuxdd/ubuntu:latest
       cpu: 8
-      memory: 20G
+      memory: 32G
   Setup_script:
-      - curl -sL ${SCR} | bash 
+      - sleep 120m
